@@ -1,4 +1,3 @@
-const { log } = require('console');
 const express = require('express');
 const fs = require('fs');
 const { v4: uuidv4 } = require('uuid');
@@ -21,30 +20,23 @@ router.get("/courses/:cid", async (req, res) => {
         cid,
       ]);
   
-      res.status(200).json(Course.rows[0]);
+      if(Course.rows[0] === undefined){
+        res.status(404).send("Course Not Found");
+      }else{
+        res.status(200).json(Course.rows[0]);
+      }
     } catch (err) {
       console.error(err.message);
     }
   });
 
-//create new course in db
-router.post("/courses", async(req, res)=>{
-    try {
-         const {Title, Description, Skills, CourseId} = req.body;
-         const newCourse = await dbPool.query("INSERT INTO courses (id, title, description, skills, course_id) VALUES($1,$2,$3,$4,$5) RETURNING *", [uuidv4(), Title, Description, Skills, CourseId]);
-         console.log("Course Created Successfully");
-         res.status(201).json(newCourse.rows[0]);
-    } catch (error) {
-        console.error(error.message);
-    }
-});
 
 //create new course in db
 router.post("/courses", async(req, res)=>{
     try {
          const {Title, Description, Skills, CourseId} = req.body;
          const newCourse = await dbPool.query("INSERT INTO courses (id, title, description, skills, course_id) VALUES($1,$2,$3,$4,$5) RETURNING *", [uuidv4(), Title, Description, Skills, CourseId]);
-         console.log("Course Created Successfully");
+        //  console.log("Course Created Successfully");
          res.status(201).json(newCourse.rows[0]);
     } catch (error) {
         console.error(error.message);
