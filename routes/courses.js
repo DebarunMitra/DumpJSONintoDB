@@ -13,6 +13,20 @@ router.get("/courses", (req, res) => {
     res.status(200).json(CourseJSON);
 });
 
+//get a course by course id
+router.get("/courses/:cid", async (req, res) => {
+    try {
+      const { cid } = req.params;
+      const Course = await dbPool.query("SELECT * FROM courses WHERE course_id = $1", [
+        cid,
+      ]);
+  
+      res.status(200).json(Course.rows[0]);
+    } catch (err) {
+      console.error(err.message);
+    }
+  });
+
 //create new course in db
 router.post("/courses", async(req, res)=>{
     try {
