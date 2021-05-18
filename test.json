@@ -1,0 +1,144 @@
+[
+    {
+        "id": 75,
+        "name": "General",
+        "visible": 1,
+        "summary": "",
+        "summaryformat": 1,
+        "section": 0,
+        "hiddenbynumsections": 0,
+        "uservisible": true,
+        "modules": [
+            {
+                "id": 179,
+                "url": "https://stage-lms.thecareerlabs.com/mod/forum/view.php?id=179",
+                "name": "Announcements",
+                "instance": 7,
+                "contextid": 2556,
+                "visible": 1,
+                "uservisible": true,
+                "visibleoncoursepage": 1,
+                "modicon": "https://stage-lms.thecareerlabs.com/theme/image.php/boost/forum/1614581765/icon",
+                "modname": "forum",
+                "modplural": "Forums",
+                "availability": null,
+                "indent": 0,
+                "onclick": "",
+                "afterlink": null,
+                "customdata": "\"\"",
+                "noviewlink": false,
+                "completion": 0
+            }
+        ]
+    },
+    {
+        "id": 76,
+        "name": "1.0 Mission 2022 : Timelines and Tests",
+        "visible": 1,
+        "summary": "<p><span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;This will give them an introduction to the course and will also tell the timeline that they should follow&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:4733,&quot;3&quot;:{&quot;1&quot;:0},&quot;5&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:{&quot;1&quot;:2,&quot;2&quot;:0}},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;6&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:{&quot;1&quot;:2,&quot;2&quot;:0}},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;7&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:{&quot;1&quot;:2,&quot;2&quot;:0}},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;8&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:{&quot;1&quot;:2,&quot;2&quot;:0}},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;9&quot;:1,&quot;12&quot;:0,&quot;15&quot;:&quot;Calibri&quot;}\">This will give them an introduction to the course and will also tell the timeline that they should follow</span><br></p>",
+        "summaryformat": 1,
+        "section": 1,
+        "hiddenbynumsections": 0,
+        "uservisible": true,
+        "modules": []
+    },
+    {
+        "id": 77,
+        "name": "2.0 Drafting your Graduate School CV",
+        "visible": 1,
+        "summary": "<p><span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;This section will contain the different aspects that the CV must contain. It will help students build their profile too. &quot;}\" data-sheets-userformat=\"{&quot;2&quot;:4733,&quot;3&quot;:{&quot;1&quot;:0},&quot;5&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:{&quot;1&quot;:2,&quot;2&quot;:0}},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;6&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:{&quot;1&quot;:2,&quot;2&quot;:0}},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;7&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:{&quot;1&quot;:2,&quot;2&quot;:0}},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;8&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:{&quot;1&quot;:2,&quot;2&quot;:0}},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;9&quot;:1,&quot;12&quot;:0,&quot;15&quot;:&quot;Calibri&quot;}\">This section will contain the different aspects that the CV must contain. It will help students build their profile too. </span><br></p>",
+        "summaryformat": 1,
+        "section": 2,
+        "hiddenbynumsections": 0,
+        "uservisible": true,
+        "modules": []
+    },
+    {
+        "id": 78,
+        "name": "3.0 Researching on Graduate Schools",
+        "visible": 1,
+        "summary": "<p><span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;This section will give the students a good idea of the schools that they can potentially apply to. &quot;}\" data-sheets-userformat=\"{&quot;2&quot;:4733,&quot;3&quot;:{&quot;1&quot;:0},&quot;5&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:{&quot;1&quot;:2,&quot;2&quot;:0}},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;6&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:{&quot;1&quot;:2,&quot;2&quot;:0}},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;7&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:{&quot;1&quot;:2,&quot;2&quot;:0}},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;8&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:{&quot;1&quot;:2,&quot;2&quot;:0}},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;9&quot;:1,&quot;12&quot;:0,&quot;15&quot;:&quot;Calibri&quot;}\">This section will give the students a good idea of the schools that they can potentially apply to. </span><br></p>",
+        "summaryformat": 1,
+        "section": 3,
+        "hiddenbynumsections": 0,
+        "uservisible": true,
+        "modules": []
+    },
+    {
+        "id": 79,
+        "name": "4.0 Open House for Fall 2022 Students",
+        "visible": 1,
+        "summary": "<p><span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;This will answer all the questions that they have about their process&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:4733,&quot;3&quot;:{&quot;1&quot;:0},&quot;5&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:{&quot;1&quot;:2,&quot;2&quot;:0}},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;6&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:{&quot;1&quot;:2,&quot;2&quot;:0}},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;7&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:{&quot;1&quot;:2,&quot;2&quot;:0}},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;8&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:{&quot;1&quot;:2,&quot;2&quot;:0}},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;9&quot;:1,&quot;12&quot;:0,&quot;15&quot;:&quot;Calibri&quot;}\">This will answer all the questions that they have about their process</span><br></p>",
+        "summaryformat": 1,
+        "section": 4,
+        "hiddenbynumsections": 0,
+        "uservisible": true,
+        "modules": []
+    },
+    {
+        "id": 80,
+        "name": "5.0 Focus of the Month- November 2020, Identifying your Program and Specialization",
+        "visible": 1,
+        "summary": "<p><span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;This will answer all the questions about Program and Specialization&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:4733,&quot;3&quot;:{&quot;1&quot;:0},&quot;5&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:{&quot;1&quot;:2,&quot;2&quot;:0}},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;6&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:{&quot;1&quot;:2,&quot;2&quot;:0}},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;7&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:{&quot;1&quot;:2,&quot;2&quot;:0}},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;8&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:{&quot;1&quot;:2,&quot;2&quot;:0}},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;9&quot;:1,&quot;12&quot;:0,&quot;15&quot;:&quot;Calibri&quot;}\">This will answer all the questions about Program and Specialization</span><br></p>",
+        "summaryformat": 1,
+        "section": 5,
+        "hiddenbynumsections": 0,
+        "uservisible": true,
+        "modules": []
+    },
+    {
+        "id": 81,
+        "name": "6.0 Impact on Backlogs or Low GPA",
+        "visible": 1,
+        "summary": "<p><span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;This will answer all the questions about Backlogs impact on masters application&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:4733,&quot;3&quot;:{&quot;1&quot;:0},&quot;5&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:{&quot;1&quot;:2,&quot;2&quot;:0}},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;6&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:{&quot;1&quot;:2,&quot;2&quot;:0}},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;7&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:{&quot;1&quot;:2,&quot;2&quot;:0}},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;8&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:{&quot;1&quot;:2,&quot;2&quot;:0}},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;9&quot;:1,&quot;12&quot;:0,&quot;15&quot;:&quot;Calibri&quot;}\">This will answer all the questions about Backlogs impact on masters application</span><br></p>",
+        "summaryformat": 1,
+        "section": 6,
+        "hiddenbynumsections": 0,
+        "uservisible": true,
+        "modules": []
+    },
+    {
+        "id": 82,
+        "name": "7.0 All about Internships",
+        "visible": 1,
+        "summary": "<p><span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;This will answer all the questions about Internships&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:4733,&quot;3&quot;:{&quot;1&quot;:0},&quot;5&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:{&quot;1&quot;:2,&quot;2&quot;:0}},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;6&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:{&quot;1&quot;:2,&quot;2&quot;:0}},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;7&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:{&quot;1&quot;:2,&quot;2&quot;:0}},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;8&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:{&quot;1&quot;:2,&quot;2&quot;:0}},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;9&quot;:1,&quot;12&quot;:0,&quot;15&quot;:&quot;Calibri&quot;}\">This will answer all the questions about Internships</span><br></p>",
+        "summaryformat": 1,
+        "section": 7,
+        "hiddenbynumsections": 0,
+        "uservisible": true,
+        "modules": []
+    },
+    {
+        "id": 83,
+        "name": "8.0 Confused about your Degree, Program, and Intake?",
+        "visible": 1,
+        "summary": "<p><span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;This will answer all the questions about chossing degree and programs. Choosing IELTS or TOEFL&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:4733,&quot;3&quot;:{&quot;1&quot;:0},&quot;5&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:{&quot;1&quot;:2,&quot;2&quot;:0}},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;6&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:{&quot;1&quot;:2,&quot;2&quot;:0}},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;7&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:{&quot;1&quot;:2,&quot;2&quot;:0}},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;8&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:{&quot;1&quot;:2,&quot;2&quot;:0}},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;9&quot;:1,&quot;12&quot;:0,&quot;15&quot;:&quot;Calibri&quot;}\">This will answer all the questions about choosing a degree and programs. Choosing IELTS or TOEFL</span><br></p>",
+        "summaryformat": 1,
+        "section": 8,
+        "hiddenbynumsections": 0,
+        "uservisible": true,
+        "modules": []
+    },
+    {
+        "id": 84,
+        "name": "9.0 Focus of the Month- October 2020",
+        "visible": 1,
+        "summary": "<p><span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;This will answer all the questions about Profile Building, Graduate Scchools and GRE exam&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:4733,&quot;3&quot;:{&quot;1&quot;:0},&quot;5&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:{&quot;1&quot;:2,&quot;2&quot;:0}},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;6&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:{&quot;1&quot;:2,&quot;2&quot;:0}},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;7&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:{&quot;1&quot;:2,&quot;2&quot;:0}},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;8&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:{&quot;1&quot;:2,&quot;2&quot;:0}},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;9&quot;:1,&quot;12&quot;:0,&quot;15&quot;:&quot;Calibri&quot;}\">This will answer all the questions about Profile Building, Graduate Schools and GRE exam</span><br></p>",
+        "summaryformat": 1,
+        "section": 9,
+        "hiddenbynumsections": 0,
+        "uservisible": true,
+        "modules": []
+    },
+    {
+        "id": 85,
+        "name": "10.0 Focus of the Month- September 2020",
+        "visible": 1,
+        "summary": "<p><span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;This will answer all the questions about Profile Building, Graduate Scchools and GRE exam&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:4733,&quot;3&quot;:{&quot;1&quot;:0},&quot;5&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:{&quot;1&quot;:2,&quot;2&quot;:0}},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;6&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:{&quot;1&quot;:2,&quot;2&quot;:0}},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;7&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:{&quot;1&quot;:2,&quot;2&quot;:0}},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;8&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:{&quot;1&quot;:2,&quot;2&quot;:0}},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;9&quot;:1,&quot;12&quot;:0,&quot;15&quot;:&quot;Calibri&quot;}\">This will answer all the questions about Profile Building, Graduate Scchools and GRE exam</span><br></p>",
+        "summaryformat": 1,
+        "section": 10,
+        "hiddenbynumsections": 0,
+        "uservisible": true,
+        "modules": []
+    }
+]

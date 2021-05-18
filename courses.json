@@ -2,7 +2,7 @@
     {
         "Title": "C++ with DS and Algorithms",
         "Description": "Become an expert in conceptualising Self Driving Cars, Web Applications and more. Learn one of the most powerful and portable programming language, C++ and become eligible to apply for the positions at companies such as Google, Microsoft, Facebook, Amazon etc.",
-        "Skills": "C++, OOPS",
+        "Skills": "C++, OOPS, java",
         "CourseId": "cid_1"
     },
     {
@@ -10,5 +10,11 @@
         "Description": "Learn to write the most efficient programs and get ready for competitions like ACM-ICPC, Google Codejam. Companies like Google, Microsoft, Facebook, Amazon etc hire professionals with exceptional problem solving skills.",
         "Skills": "Bit Manipulation, Greedy problems, Dynamic Programming",
         "CourseId": "cid_2"
+    },
+    {
+        "Title": "Java Programming",
+        "Description": "Java course for programming",
+        "Skills": "",
+        "CourseId": "cid_3"
     }
 ]

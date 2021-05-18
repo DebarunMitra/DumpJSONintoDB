@@ -1,0 +1,424 @@
+{
+    "id": "18d2c689-eb02-4231-af7f-8e75d27ad756",
+    "courseId": "KP_141_SP_002",
+    "name": "Game Development",
+    "shortName": "Game Development Course",
+    "description": "Video Games are the perfect blend for people who love both creativity and technology. Light up your left and right brain activity simultaneously, as you understand video game development in the most easy way through this course.You will gain an insight on what goes into creating games. So, are you ready to learn and show off your complex game development skills and make a career in Gaming Development?",
+    "bannerURL": "https://mernlmsassets.s3.ap-south-1.amazonaws.com/BannerImages/Gaming.png",
+    "lmsURL": null,
+    "displayImageURL": "https://mernlmsassets.s3.ap-south-1.amazonaws.com/Thumbnails/Digitalmarketing.png",
+    "thumnailImageURL": "https://mernlmsassets.s3.ap-south-1.amazonaws.com/Thumbnails/Gaming%20%20-Thumbnail.png",
+    "courseLevel": null,
+    "provider": null,
+    "courseCategory": "",
+    "domains": "Creative",
+    "parentBranchVal": "Computer Science and Engineering",
+    "belongsTo": {
+        "id": "55d051d1-d9db-42d7-9625-8de3f7eecf46",
+        "name": "Computer Science and Engineering",
+        "description": null
+    },
+    "branchVal": "All Engineering",
+    "preRequisiteName": "",
+    "stats": {
+        "id": "c5e212dd-b9c2-4e1c-898d-1899b368551f",
+        "noOfViews": 0,
+        "noOfCompletion": 0,
+        "noOfEnrolled": 372,
+        "averageSalary": "6.4 Lakhs p.a",
+        "noOfInProgress": 0,
+        "noOfPlacements": 138,
+        "isCLAPP": null,
+        "recentCompletionDate": null,
+        "recentEnrollmentDate": null
+    },
+    "noOfEnrolled": null,
+    "marketingInfo": {
+        "id": "ee6b55d7-050c-4703-9d70-a66c1f1637c5",
+        "attendTexts": [],
+        "webinarURL": null,
+        "speciality": "Online Live Classes",
+        "abstractText": "Video Games are the perfect blend for people who love both creativity and technology. Light up your left and right brain activity simultaneously, as you understand video game development in the most easy way through this course.You will gain an insight on what goes into creating games. So, are you ready to learn and show off your complex game development skills and make a career in Gaming Development?",
+        "overview": "You will be using Unity 3D software in this module - Unity is the go-to game development application by major mobile game companies, especially because of its ease of use, straightforwardness, and tons of support available throughout the web. With very basic scripting skills which anyone can acquire, Unity opens up the possibility of one becoming a professional in a very little amount of time.",
+        "keyFeatures": [
+            "Learn from Industry Experts from DreamWorks",
+            "Interactive Student Walls & Forums",
+            "Designed For Professionals and Students",
+            "Live Interactive Video Sessions "
+        ],
+        "skills": [
+            "Unity",
+            "3D Modelling"
+        ],
+        "toolsCovered": [
+            {
+                "id": "527d0e57-9e65-4447-8fa4-7d12f1ca3b44",
+                "image": "https://mernlmsassets.s3.ap-south-1.amazonaws.com/Tools/unity.png"
+            }
+        ],
+        "introVideoURL": "https://player.vimeo.com/video/371358453",
+        "source": [],
+        "keyStats": [],
+        "placementOpp": {
+            "id": "95d0babb-7c80-46eb-a154-22019b94fb31",
+            "title": "Placement Opportunities",
+            "description": "The video game industry is experiencing unprecedented success. It has been estimated that gaming will be worth over $91 billion dollars by 2020(source: Indeed). A snapshot of jobs and related salaries is mentioned below.",
+            "chartTitle": [
+                "Designation",
+                "Annual Salary",
+                "Hiring Companies"
+            ],
+            "jobDetails": [
+                {
+                    "id": "811ca053-a082-41d0-9ee4-07e07cd7ef0a",
+                    "role": "Multimedia Artist/Animator",
+                    "salary": [
+                        "3.9L",
+                        "6.4L",
+                        "12.6L"
+                    ],
+                    "companyLogoURLs": [
+                        "https://mernlmsassets.s3.ap-south-1.amazonaws.com/CompaniesLogo/rockstar.jpeg",
+                        "https://mernlmsassets.s3.ap-south-1.amazonaws.com/CompaniesLogo/Activision-Blizzard.jpg",
+                        "https://mernlmsassets.s3.ap-south-1.amazonaws.com/CompaniesLogo/Valve_logo4_678x452.png"
+                    ]
+                },
+                {
+                    "id": "8616b9b4-f106-481f-80ef-c503e69bcaf3",
+                    "role": "Developer",
+                    "salary": [
+                        "4.08L",
+                        "6.3L",
+                        "10.2L"
+                    ],
+                    "companyLogoURLs": [
+                        "https://mernlmsassets.s3.ap-south-1.amazonaws.com/CompaniesLogo/Activision-Blizzard.jpg",
+                        "https://mernlmsassets.s3.ap-south-1.amazonaws.com/CompaniesLogo/Valve_logo4_678x452.png",
+                        "https://mernlmsassets.s3.ap-south-1.amazonaws.com/CompaniesLogo/sonygaming.jpg"
+                    ]
+                },
+                {
+                    "id": "02014f06-436b-4368-91f8-09f326824d96",
+                    "role": "Video Game Tester",
+                    "salary": [
+                        "4.6L",
+                        "6.7L",
+                        "8.3L"
+                    ],
+                    "companyLogoURLs": [
+                        "https://mernlmsassets.s3.ap-south-1.amazonaws.com/CompaniesLogo/Activision-Blizzard.jpg",
+                        "https://mernlmsassets.s3.ap-south-1.amazonaws.com/CompaniesLogo/Valve_logo4_678x452.png"
+                    ]
+                }
+            ],
+            "salaryRange": [
+                " 6,42,",
+                "150"
+            ]
+        },
+        "curriculum": {
+            "id": "6662803b-586d-48c9-a75c-2a7986d0156b",
+            "eligibility": "The course is for those who want to take the first step into the world of Game development. With the step-by-step video tutorials, you will develop games that you can play on your mobile.",
+            "points": [
+                "Beginners with no prior knowledge of game development.",
+                "Those who want to create mobile games and have an undying love for computers.",
+                "Those who want to take the first step into the world of Game Development."
+            ],
+            "prerequisites": null
+        },
+        "courseContents": [
+            {
+                "id": "65d998fc-442d-4efd-87cd-fd4d57607eeb",
+                "primaryTitle": "Preview Section",
+                "totalTime": "",
+                "secondaryTitle": [
+                    {
+                        "id": "39e266f4-8c00-48d9-b34f-7286f9c8927d",
+                        "title": "Course Overview",
+                        "videoUrl": "https://player.vimeo.com/video/371358453",
+                        "time": ""
+                    },
+                    {
+                        "id": "76d9ce1d-e808-4127-b9a4-e8a70478c32e",
+                        "title": "Understanding Game Engines and Installing Unity",
+                        "videoUrl": "https://player.vimeo.com/video/361283869",
+                        "time": ""
+                    },
+                    {
+                        "id": "c9b23c19-bd45-40ff-af35-35eb9b5ebd47",
+                        "title": "Understanding Unity UI and setting up scene",
+                        "videoUrl": "https://player.vimeo.com/video/361284014",
+                        "time": ""
+                    },
+                    {
+                        "id": "31754e36-dde9-4113-a641-b1228d54c95e",
+                        "title": "Creating the Endless Scrolling Road",
+                        "videoUrl": "https://player.vimeo.com/video/361284338",
+                        "time": ""
+                    },
+                    {
+                        "id": "2b4f4e17-7552-4149-a2d8-5eb38c44b4a8",
+                        "title": "Fill Up The Road With Traffic",
+                        "videoUrl": "https://player.vimeo.com/video/361284601",
+                        "time": ""
+                    },
+                    {
+                        "id": "391bc616-f6bb-4e13-bba0-5668d614d922",
+                        "title": "Move Car By Using Mouse Position Input",
+                        "videoUrl": "https://player.vimeo.com/video/361284758",
+                        "time": ""
+                    }
+                ]
+            },
+            {
+                "id": "69549744-6d60-42a6-ab86-b6ec7b50dd7f",
+                "primaryTitle": "Lesson 01 Course Introduction",
+                "totalTime": "",
+                "secondaryTitle": [
+                    {
+                        "id": "22653ea1-c444-4bfa-9490-c28b31f0d1de",
+                        "title": "Game Development Course Overview",
+                        "videoUrl": "",
+                        "time": ""
+                    },
+                    {
+                        "id": "ecde8f55-f326-41e7-a860-ac2c0c5f961f",
+                        "title": "Game Development Assets",
+                        "videoUrl": "",
+                        "time": ""
+                    }
+                ]
+            },
+            {
+                "id": "745ba0e5-6160-4b0e-9bc1-6efb72c18ed4",
+                "primaryTitle": "Lesson 02 Introduction and Unity setup",
+                "totalTime": "",
+                "secondaryTitle": [
+                    {
+                        "id": "4e2c684d-5dd0-4ec8-97d6-76a5e44372fc",
+                        "title": "Understanding Game Engines and Installing Unity",
+                        "videoUrl": "",
+                        "time": ""
+                    },
+                    {
+                        "id": "6c277ad7-3606-4cf9-811a-d7c331ac8ca6",
+                        "title": "Understanding Unity UI and setting up scene",
+                        "videoUrl": "",
+                        "time": ""
+                    }
+                ]
+            },
+            {
+                "id": "61ac9d59-028a-4657-ac7f-bb0ae0acc7b7",
+                "primaryTitle": "Lesson 03 Car Game Assignment",
+                "totalTime": "",
+                "secondaryTitle": [
+                    {
+                        "id": "d4adf1fd-f692-4075-b23f-3d38e644833f",
+                        "title": "Creating the Endless Scrolling Road",
+                        "videoUrl": "",
+                        "time": ""
+                    },
+                    {
+                        "id": "eb17c166-8fe3-4a72-99ff-1348c720b950",
+                        "title": "Fill Up The Road With Traffic",
+                        "videoUrl": "",
+                        "time": ""
+                    },
+                    {
+                        "id": "4748e6b1-3de5-46fd-b0a3-3d5bce87fc68",
+                        "title": "Move Car By Using Mouse Position Input",
+                        "videoUrl": "",
+                        "time": ""
+                    },
+                    {
+                        "id": "a5526c81-05f2-4791-9587-9043974ca6e1",
+                        "title": "Collision With Bounding Box Intersection",
+                        "videoUrl": "",
+                        "time": ""
+                    },
+                    {
+                        "id": "8e7f78db-252a-4375-a4e0-f518307ff4ef",
+                        "title": "Create our User Interface using Canvas",
+                        "videoUrl": "",
+                        "time": ""
+                    },
+                    {
+                        "id": "0c586b95-cb5a-4bb9-94dd-1eb99c7fd773",
+                        "title": "Code the User Interface Start Button",
+                        "videoUrl": "",
+                        "time": ""
+                    },
+                    {
+                        "id": "10cda61e-a420-45a5-9645-0a24ea187771",
+                        "title": "Code the Score Display on User Interface",
+                        "videoUrl": "",
+                        "time": ""
+                    },
+                    {
+                        "id": "0072fece-7957-46fa-aff0-786819f53f18",
+                        "title": "Building Apk for Mobile",
+                        "videoUrl": "",
+                        "time": ""
+                    }
+                ]
+            },
+            {
+                "id": "42aada4a-ce65-4cc5-8802-bfb7e8ae085a",
+                "primaryTitle": "Lesson 03 Course Challenge",
+                "totalTime": "",
+                "secondaryTitle": [
+                    {
+                        "id": "8f4f6bf3-4044-4073-bb9f-e94b29ee48c9",
+                        "title": "Creating a Car Game with a Higher Level of Difficulty",
+                        "videoUrl": "",
+                        "time": ""
+                    }
+                ]
+            }
+        ],
+        "industryProjects": [
+            {
+                "id": "526f7c43-d1df-44c1-8fa2-7f2bff8fc5e6",
+                "title": "2D Shooter Game",
+                "description": "Design a 2D Shooter Game, where user will have to hit the moving target thrice from 5 attempts."
+            },
+            {
+                "id": "02975f86-ac03-42c4-b6e1-95ad9206603a",
+                "title": "Unity Racing Game",
+                "description": "Create a car game, where user needs to reach finish line beating traffic and other obstacles on the road. Keep increasing the speed of the car after every 25 seconds."
+            },
+            {
+                "id": "ae63f55c-1d57-4325-9164-66c4967c7a8a",
+                "title": "Endless Runner Game",
+                "description": "Create 3D Endless Runner Game in Unity (like Subway Surfers)"
+            }
+        ],
+        "projectOutcomes": [
+            {
+                "id": "526f7c43-d1df-44c1-8fa2-7f2bff8fc5e6",
+                "giflink": null,
+                "description": "Design a 2D Shooter Game, where user will have to hit the moving target thrice from 5 attempts."
+            },
+            {
+                "id": "02975f86-ac03-42c4-b6e1-95ad9206603a",
+                "giflink": null,
+                "description": "Create a car game, where user needs to reach finish line beating traffic and other obstacles on the road. Keep increasing the speed of the car after every 25 seconds."
+            },
+            {
+                "id": "ae63f55c-1d57-4325-9164-66c4967c7a8a",
+                "giflink": null,
+                "description": "Create 3D Endless Runner Game in Unity (like Subway Surfers)"
+            }
+        ],
+        "examAndCertification": [
+            {
+                "id": "bde8973c-2759-42a7-b299-58fb739e15ec",
+                "question": "Who will be providing the course certificate and what will be its validity?",
+                "answer": "Upon successful completion of this course, CareerLabs will provide you with an industry-recognized course completion certificate which has a lifelong validity."
+            },
+            {
+                "id": "d9a60280-05ee-443d-a4eb-ddec5864a1be",
+                "question": "How can I get the Certification?",
+                "answer": "Once you finish the course, the certification is awarded to you based on the submission of the assignments/projects that are part of the course requirements. In few cases, the certifications are awarded by 3rd party organizations which would include separate assignments or processes. Our counsellor will help you with all the details before you enrol and start the learning journey."
+            },
+            {
+                "id": "ad315fd9-6c5a-449b-9768-3fed3851cd2c",
+                "question": "Which Companies can I get placed in after this course?",
+                "answer": "The best part of certification courses from CareerLabs is that they are drafted in alignment with the Industry Requirements. This means that you are getting skilled to be placed in the companies which are looking at these specific skill sets and expertise. Talk to our Counsellors to understand the Placement Oppurtunities after this course."
+            }
+        ],
+        "faculty": null,
+        "courseAdvisors": [
+            {
+                "id": "ce684e16-cec8-47cb-b807-5b5c3f8742d4",
+                "name": "Mr. A Sai",
+                "linkedIn": "https://www.linkedin.com/in/anandhasai-sivalingan-143ab513/?originalSubdomain=in",
+                "profileImageURL": "https://mernlmsassets.s3.ap-south-1.amazonaws.com/CourseTrainers/Native Puppets/Anand Sai.png",
+                "designation": "Modeling Head",
+                "description": "Mr. Sai is an Art Mentor for the Assets Department at Xentrix Studios where he teaches art, 3D modeling and texturing. A graduate from the College of Fine Arts, Chennai, He has been drawing for as long as he can remember. He started his career as an illustrator and moved to being a modeler. During his 7+ years as the Head of Modeling at DreamWorks Animation, he has worked on projects like Trolls, Penguins of Madagascar and Puss in the Boots."
+            }
+        ],
+        "testimonials": [],
+        "courseReviews": [
+            {
+                "id": "08af8f3e-f83b-44cf-9323-5c1e25c59a02",
+                "reviewer": "Rohan, CMRIT, Bengaluru",
+                "review": "This program provides the right knowledge required by the Animation Industry and that too at an affordable cost as compared to other programs. Learning here, with CareerLabs, is ultimate fun!",
+                "logoImageURL": null
+            },
+            {
+                "id": "bc35f117-4d7c-436e-8648-6ed5ce6c1f78",
+                "reviewer": "Paarth Guptha, SMR Institute of Science & Technology, Chennai",
+                "review": "My learning experience at CareerLabs has been really good so far. I opted for the program, as it was more affordable. The part of the learning process that I enjoy the most are the assignments!",
+                "logoImageURL": null
+            }
+        ],
+        "whyByjus": null,
+        "whyInfo": null,
+        "whyCareerLabs": [
+            {
+                "id": "6765c369-aa01-4f83-a00a-969de629d821",
+                "title": "Industry Relevant Curriculum",
+                "description": "Stay at the forefront of the emerging trends and build an outstanding profile by bridging your skill gaps with our curriculum!"
+            },
+            {
+                "id": "0fc0df40-2452-4f11-8844-0cdb21678223",
+                "title": "Learn From The Best In The Industry",
+                "description": "Train with Industry Experts, updated with the most in-demand Technical Knowledge, and become an expert!"
+            },
+            {
+                "id": "5e5c64ed-18e6-4726-94b1-3237e95231d6",
+                "title": "Get Certified",
+                "description": "Certifications help you showcase your competency and commitment for the profession. Train with us and get certified on completion of the course."
+            }
+        ],
+        "byjusFAQ": null,
+        "faqs": [
+            {
+                "id": "464370f8-3967-4f39-907a-4351c5123fc6",
+                "faqId": null,
+                "question": "I can't Draw! Can I still learn animation?",
+                "answer": "Absolutely! While the ability to draw helps in the process, it is surely not a necessity.Through the Levels, students will be exposed to various workflows, which they can then improvise on to suit their own working style and overcome any shortcomings."
+            },
+            {
+                "id": "8cadba9b-44aa-4a67-8c8d-eae0716322ec",
+                "faqId": null,
+                "question": "How is this course different from other online courses?",
+                "answer": "Feedback on assignment by industry experts makes this program unique from other online training programs. Our aim is to provide high quality training and help applicants make a solid demo reel."
+            },
+            {
+                "id": "76c17f16-92a0-46af-913e-45662204a685",
+                "faqId": null,
+                "question": "How do I enroll to these courses ?",
+                "answer": "You can enroll to this course by clicking the 'enrol course' button and filling in your details. Our Counsellor will get in touch with you to help you with the rest of the journey, you can drop us an email at support@thecareerlabs.com or talk to our Counsellor through our helpline +91 6366004441 "
+            },
+            {
+                "id": "cb2d8b2f-b98a-4f04-a98c-9a8842267366",
+                "faqId": null,
+                "question": "What is the Duration of the Course?",
+                "answer": "The duration of the courses vary basis the levels and the certification process. Duration of Courses ranges from 30 Days to 3 Months. Our counsellor will help you with all details before you enrol and start the learning journey."
+            },
+            {
+                "id": "afdbebe9-0ed9-4f4c-85f1-73987f18c2ef",
+                "faqId": null,
+                "question": "What is Profile Building?",
+                "answer": "Profile Building is the art of consciously working towards your professional goals. As students or as working professionals, companies recruit people who are focused on their Career Goals. The best way to showcase one's interests and goals is to build up one's profile and show it on LinkedIn, CV/ Resume, Industry Forums etc. All these activities and much more contribute to the process of Profile Building. CareerLabs, India's Premier Ed-Tech Company in Partnership with BYJU's, helps 1000s of students every year to build up their Profiles."
+            },
+            {
+                "id": "47b05a22-4c27-4626-9f67-48a1f419dfbf",
+                "faqId": null,
+                "question": "What is the Cost of the Course ?",
+                "answer": "At CareerLabs, we look at Career Tracks and not just courses. We want our students to achieve their career goals and hence we look at Career Tracks. Any course that you take should take you one step closer to your Career Track and add value to your Profile. There are Packages for various Career Tracks which you can explore when you talk to our Counsellors."
+            },
+            {
+                "id": "f84e6084-4e43-4a46-a22b-00322b0b1598",
+                "faqId": null,
+                "question": "As a College Student or a Fresher, How will these courses help me?",
+                "answer": "Companies love to recruit students who are focused and have shown practical hands-on experience in their field of interest. The best part of courses from CareerLabs is that they are drafted in alignment with the Industry Requirements. This means that you are getting skilled to be placed in the companies which are looking at these specific skil lsets and expertize."
+            }
+        ],
+        "highlights": [],
+        "byjuskit": null
+    }
+}
