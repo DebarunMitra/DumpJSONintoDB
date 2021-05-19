@@ -122,13 +122,54 @@ updateDbCourseContent = async (content) => {
 
 updateDbCourseContentSecondaryTitle = async (secondaryTitle) => {
     const UpdatedSecondaryTitleResponse = await axios.put(`${RULE_ENGINE_URL}/api/v1/secondary-title/${secondaryTitle.id}`, secondaryTitle);
-   if(updateDbCourseContentSecondaryTitle.status === 200){
+   if(UpdatedSecondaryTitleResponse.status === 200){
     console.log(`Secondary Title Updated Successfully ${await secondaryTitle.id}`);
     return true;
    }else{
     console.log(`Secondary Title Update fail ${await secondaryTitle.id}`);
     return false;
   }
+}
+
+checkAndUpdateCourseContent = async (dbCourses, moodleCourse, processingDbCourse) => {
+    const moodleCourseContents = await getMoodleCourseContent(processingDbCourse.moodleCourseId);
+    console.log(`moodleCourseContent length ${moodleCourseContents.length}`);
+
+    for(let i=0; i<moodleCourseContents.length; i++){
+        // processingDbCourse = dbCourses.find(course=>moodleCourse.idnumber === course.courseId);
+         //check and update course content primary title
+         // console.log(processingDbCourse.courseContents);
+         console.log(`for ${i} +> ${moodleCourseContents.length} ---- ${processingDbCourse.courseContents.length} || ${processingDbCourse.moodleCourseId} --- ${processingDbCourse.courseId}`);
+         if(processingDbCourse.courseContents.length>0){
+             const processingContent = await processingDbCourse.courseContents.find(content=> parseInt(content.moodleContentId) === moodleCourseContents[i].id);
+             if(processingContent!==undefined){
+                 if(await moodleCourseContents[i].name !== await processingContent.primaryTitle){
+                     processingContent.primaryTitle = await moodleCourseContents[i].name;
+                     updateDbCourseContent(processingContent);
+                 }
+                 
+                 if(await moodleCourseContents[i].modules.length>0){
+                     for(let j=0; j<moodleCourseContents[i].modules.length;j++){
+                         if(processingContent.secondaryTitle.length>0){  
+                             const ProcessingSecondaryTitle = processingContent.secondaryTitle.find(secondaryTitle=>parseInt(secondaryTitle.moodleModuleId) === moodleCourseContents[i].modules[j].id)
+                             if(ProcessingSecondaryTitle!==undefined){
+                                 if( moodleCourseContents[i].modules[j].name !== ProcessingSecondaryTitle.title){
+                                     ProcessingSecondaryTitle.title = await moodleCourseContents[i].modules[j].name;
+                                     updateDbCourseContentSecondaryTitle(ProcessingSecondaryTitle);
+                                 }
+                             }else{
+                                 console.log('Fail to find secondary title');
+                             }
+                         }
+                     }
+                 }
+
+             }else{
+                 console.log(`Fail to find content!!-> ml${moodleCourseContents.length} -- pcl${processingDbCourse.courseContents.length}`);
+                 
+                }
+         }
+     }
 }
 
 router.get("/moodle-course-sync", async (req, res) => {
@@ -144,9 +185,8 @@ router.get("/moodle-course-sync", async (req, res) => {
     await moodleCourses.forEach(async moodleCourse => {
         console.log(`+++++++++ ${moodleCourse.idnumber} +++++++++`);
         processingDbCourse = await dbCourses.find(course=>moodleCourse.idnumber === course.courseId);
-        // console.log(`---------- ${processingDbCourse.courseId} ----------`);
         if(processingDbCourse !== undefined){
-            console.log(`update course: ${processingDbCourse.courseId}`);
+            console.log(`Update course: ${processingDbCourse.courseId}`);
              if(
                     processingDbCourse.shortname !== moodleCourse.shortname &&
                     processingDbCourse.moodleCategoryId !== moodleCourse.categoryid &&
@@ -166,47 +206,9 @@ router.get("/moodle-course-sync", async (req, res) => {
                    
                 }
 
-                console.log(`${moodleCourse.idnumber} ---- ${processingDbCourse.courseId}`);
-
-               const moodleCourseContents = await getMoodleCourseContent(processingDbCourse.moodleCourseId);
-               console.log(`moodleCourseContent length ${moodleCourseContents.length}`);
+               console.log(`${moodleCourse.idnumber} ---- ${processingDbCourse.courseId}`);
+               await checkAndUpdateCourseContent(dbCourses, moodleCourse, processingDbCourse);
                
-               
-
-               for(let i=0; i<moodleCourseContents.length; i++){
-                   processingDbCourse = dbCourses.find(course=>moodleCourse.idnumber === course.courseId);
-                    //check and update course content primary title
-                    // console.log(processingDbCourse.courseContents);
-                    console.log(`for ${i} +> ${moodleCourseContents.length} ---- ${processingDbCourse.courseContents.length} || ${processingDbCourse.moodleCourseId} --- ${processingDbCourse.courseId}`);
-                    if(processingDbCourse.courseContents.length>0){
-                        const processingContent = await processingDbCourse.courseContents.find(content=> parseInt(content.moodleContentId) === moodleCourseContents[i].id);
-                        if(processingContent!==undefined){
-                            if(await moodleCourseContents[i].name !== await processingContent.primaryTitle){
-                                processingContent.primaryTitle = await moodleCourseContents[i].name;
-                                updateDbCourseContent(processingContent);
-                            }
-                            
-                            if(await moodleCourseContents[i].modules.length>0){
-                                for(let j=0; j<moodleCourseContents[i].modules.length;j++){
-                                    if(processingContent.secondaryTitle.length>0){  
-                                        const ProcessingSecondaryTitle = processingContent.secondaryTitle.find(secondaryTitle=>parseInt(secondaryTitle.moodleModuleId) === moodleCourseContents[i].modules[j].id)
-                                        if(ProcessingSecondaryTitle!==undefined){
-                                            if( moodleCourseContents[i].modules[j].name !== ProcessingSecondaryTitle.title){
-                                                ProcessingSecondaryTitle.title = await moodleCourseContents[i].modules[j].name;
-                                                updateDbCourseContentSecondaryTitle(ProcessingSecondaryTitle);
-                                            }
-                                        }else{
-                                            console.log('fail to get secondary title');
-                                        }
-                                    }
-                                }
-                            }
-
-                        }else{
-                            console.log(`fail to find content!!-> ml${moodleCourseContents.length} -- pcl${processingDbCourse.courseContents.length}`);
-                        }
-                    }
-                }
 
         }else{
             console.log(`create new course: ${moodleCourse.idnumber}`);
