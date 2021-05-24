@@ -30,8 +30,9 @@ router.get("/glogin", async (req, res) => {
             // let currentCookies = await page.cookies();
 
             // fs.writeFileSync('./cookies.json', JSON.stringify(currentCookies));
-
             await res.redirect('https://stage-lms.thecareerlabs.com/course/view.php?id=124');
+            await page.waitFor(15000);
+            await browser.close();
         }catch(error){
             console.log('Failed');
             process.exit(0);
@@ -45,8 +46,6 @@ router.get("/locallogin", async (req, res) => {
     let page = await browser.newPage();
 
     if(Object.keys(cookies).length){
-        await page.setCookie(...cookies);
-
         await page.goto("https://stage-lms.thecareerlabs.com/login/index.php", {waitUntil: 'networkidle2'});
     } else {
         await page.goto("https://stage-lms.thecareerlabs.com/login/index.php", {waitUntil: 'networkidle2'});
@@ -55,14 +54,22 @@ router.get("/locallogin", async (req, res) => {
          await page.type('#password', 'Deba123$', {delay: 30});
 
         await page.click('#loginbtn');
+        let currentCookies = await page.cookies();
+        console.log(currentCookies);
+
+        const hrefs = await page.$x('//input[@name="logintoken"]');
+
+        console.log(hrefs);
+
         await page.waitForNavigation({waitUntil: 'networkidle0'});
-        await page.waitFor(5000);
+        await page.waitFor(15000);
+
         try{
             await page.waitFor('[class="avatars"]');
 
             // let currentCookies = await page.cookies();
-
-            // fs.writeFileSync('./cookies.json', JSON.stringify(currentCookies));
+            // console.log(currentCookies);
+            //fs.writeFileSync('./cookies.json', JSON.stringify(currentCookies));
 
             await res.redirect('https://stage-lms.thecareerlabs.com/course/view.php?id=124');
 

@@ -7,10 +7,11 @@ const router = express.Router();
 
 router.get("/signin", async (req, res) => {
     axios.get("https://stage-lms.thecareerlabs.com/login/index.php").then(async response=>{
-        // console.log(response.data);
+        console.log(response);
         //const text = await response.data.text();
         const dom = await new JSDOM(response.data);
          //login with google
+        //  console.log(dom.window.document.location);
         dom.window.document.querySelectorAll("a").forEach(element => {
             if(element.title === "google"){
                 const SESSKEY = element.href.split("sesskey=")[1];

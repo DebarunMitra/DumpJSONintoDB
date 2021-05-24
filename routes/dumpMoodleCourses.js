@@ -19,7 +19,7 @@ getDBCoursesData = async () => {
 
 getMoodleCoursesData = async () => {
     const MoodelCourses = await axios.get(`https://stage-lms.thecareerlabs.com/webservice/rest/server.php?wstoken=79f1cd9efdb4481101c2c6ecb14c27a2&moodlewsrestformat=json&wsfunction=core_course_get_courses`);
-    const MoodelCourse = await MoodelCourses.data.filter(course => course.idnumber!=="");
+    const MoodelCourse = await MoodelCourses.data.filter(course => course.idnumber !==""); 
     return MoodelCourse;
 }
 
@@ -43,7 +43,7 @@ setNewCourseToDB = async moodleCourse => {
         "moodleSkillLevel": moodleCourse.customfields[2].value
     }
 
-    const NewCourseResponse = await axios.post(`${RULE_ENGINE_URL}/api/v1/courses`, Payload);
+    const NewCourseResponse = await axios.post(`${RULE_ENGINE_URL}/api/v1/courses`, Payload).catch(error=> console.log(error));
     if(NewCourseResponse.status === 201){
         console.log(`New Course Created ${NewCourseResponse.data.id}`);
         return NewCourseResponse.data.id;
@@ -54,7 +54,7 @@ setNewCourseToDB = async moodleCourse => {
 }
 
 getMoodleCourseContent = async (courseId) => {
-    const courseContent =  await axios.get(`https://stage-lms.thecareerlabs.com/webservice/rest/server.php?wstoken=79f1cd9efdb4481101c2c6ecb14c27a2&moodlewsrestformat=json&wsfunction=core_course_get_contents&courseid=${courseId}`);
+    const courseContent =  await axios.get(`https://stage-lms.thecareerlabs.com/webservice/rest/server.php?wstoken=79f1cd9efdb4481101c2c6ecb14c27a2&moodlewsrestformat=json&wsfunction=core_course_get_contents&courseid=${courseId}`).catch(error=> console.log(error));
     // console.log('1: '+ await courseContent.data.length);
     let courseContentData = await courseContent.data;
     courseContentData.shift();
@@ -71,7 +71,7 @@ setNewCourseContents = async (content, courseId) =>{
             "moodleContentId": content.id
         };
     
-    const NewContentResponse = await axios.post(`${RULE_ENGINE_URL}/api/v1/course-content/${courseId}`, Payload);
+    const NewContentResponse = await axios.post(`${RULE_ENGINE_URL}/api/v1/course-content/${courseId}`, Payload).catch(error=> console.log(error));
     if(NewContentResponse.status === 201){
         console.log(`New Content Created ${NewContentResponse.data.id}`);
         return NewContentResponse.data.id;
@@ -88,7 +88,7 @@ setNewCourseContentsSecondaryTitle = async (secondaryTitle, contentId) => {
                "time": "",
                "moodleModuleId": secondaryTitle.id
             };
-    const NewSecondaryTitleResponse = await axios.post(`${RULE_ENGINE_URL}/api/v1/secondary-title/create/${contentId}`, Payload);
+    const NewSecondaryTitleResponse = await axios.post(`${RULE_ENGINE_URL}/api/v1/secondary-title/create/${contentId}`, Payload).catch(error=> console.log(error));
     if(NewSecondaryTitleResponse.status === 201){
         console.log(`New Secondary Title Created ${NewSecondaryTitleResponse.data.id}`);
         return true;
@@ -99,7 +99,7 @@ setNewCourseContentsSecondaryTitle = async (secondaryTitle, contentId) => {
 }
 
 updateDbCourse = async (course) => {    
-    const courseUpdateResponse = await axios.put(`${RULE_ENGINE_URL}/api/v1/courses/${course.id}`, course);
+    const courseUpdateResponse = await axios.put(`${RULE_ENGINE_URL}/api/v1/courses/${course.id}`, course).catch(error=> console.log(error));
     if(courseUpdateResponse.status === 200){
         console.log(`Course Data Updated Successfully ${course.courseId}`);
         return true;
@@ -110,7 +110,7 @@ updateDbCourse = async (course) => {
 }
 
 updateDbCourseContent = async (content) => {
-    const PrimaryTitleUpdateResponse = await axios.put(`${RULE_ENGINE_URL}/api/v1/course-content/${content.id}`, content);
+    const PrimaryTitleUpdateResponse = await axios.put(`${RULE_ENGINE_URL}/api/v1/course-content/${content.id}`, content).catch(error=> console.log(error));
     if(PrimaryTitleUpdateResponse.status === 200){
         console.log(`${await content.id} content updated successfully!`);
         return true;
@@ -121,7 +121,7 @@ updateDbCourseContent = async (content) => {
 }
 
 updateDbCourseContentSecondaryTitle = async (secondaryTitle) => {
-    const UpdatedSecondaryTitleResponse = await axios.put(`${RULE_ENGINE_URL}/api/v1/secondary-title/${secondaryTitle.id}`, secondaryTitle);
+    const UpdatedSecondaryTitleResponse = await axios.put(`${RULE_ENGINE_URL}/api/v1/secondary-title/${secondaryTitle.id}`, secondaryTitle).catch(error=> console.log(error));
    if(UpdatedSecondaryTitleResponse.status === 200){
     console.log(`Secondary Title Updated Successfully ${await secondaryTitle.id}`);
     return true;
@@ -158,7 +158,7 @@ checkAndUpdateCourseContent = async (dbCourses, moodleCourse, processingDbCourse
                                      updateDbCourseContentSecondaryTitle(ProcessingSecondaryTitle);
                                  }
                              }else{
-                                 console.log('Fail to find secondary title');
+                                 console.log(`Fail to find secondary title ${moodleCourseContents[i].modules[j].id}`);
                              }
                          }
                      }
