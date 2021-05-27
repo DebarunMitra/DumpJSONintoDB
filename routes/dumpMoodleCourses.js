@@ -150,7 +150,7 @@ checkAndUpdateCourseContent = async (dbCourses, moodleCourse, processingDbCourse
                  
                  if(await moodleCourseContents[i].modules.length>0){
                      for(let j=0; j<moodleCourseContents[i].modules.length;j++){
-                         if(processingContent.secondaryTitle.length>0){  
+                         if(processingContent.secondaryTitle.length>0){
                              const ProcessingSecondaryTitle = processingContent.secondaryTitle.find(secondaryTitle=>parseInt(secondaryTitle.moodleModuleId) === moodleCourseContents[i].modules[j].id)
                              if(ProcessingSecondaryTitle!==undefined){
                                  if( moodleCourseContents[i].modules[j].name !== ProcessingSecondaryTitle.title){
@@ -159,6 +159,9 @@ checkAndUpdateCourseContent = async (dbCourses, moodleCourse, processingDbCourse
                                  }
                              }else{
                                  console.log(`Fail to find secondary title ${moodleCourseContents[i].modules[j].id}`);
+                                 if(moodleCourseContents[i].modules.length > processingContent.secondaryTitle.length){
+                                    await setNewCourseContentsSecondaryTitle(moodleCourseContents[i].modules[j], processingContent.id);
+                                 }
                              }
                          }
                      }
@@ -166,8 +169,15 @@ checkAndUpdateCourseContent = async (dbCourses, moodleCourse, processingDbCourse
 
              }else{
                  console.log(`Fail to find content!!-> ml${moodleCourseContents.length} -- pcl${processingDbCourse.courseContents.length}`);
-                 
+                 if(moodleCourseContents.length > processingDbCourse.courseContents.length){
+                    const NewContentIdInExistingCourse = await setNewCourseContents(moodleCourseContents[i], processingDbCourse.id);
+                    if(await moodleCourseContents[i].modules.length>0){
+                        await moodleCourseContents[i].modules.forEach(async modulesContents => {
+                            await setNewCourseContentsSecondaryTitle(modulesContents, NewContentIdInExistingCourse);
+                         })
+                    }
                 }
+            }
          }
      }
 }
