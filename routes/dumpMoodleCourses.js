@@ -5,7 +5,7 @@ const axios = require("axios");
 
 const router = express.Router();
 
-const RULE_ENGINE_URL = 'http://localhost:8080';
+const RULE_ENGINE_URL = 'http://localhost:8080';  //https://dev-services.thecareerlabs.com
 
 clearHtmlTags = (html) => {
     return html.replace(/<\/?("[^"]*"|'[^']*'|[^>])*(>|$)/g, "");
@@ -131,6 +131,38 @@ updateDbCourseContentSecondaryTitle = async (secondaryTitle) => {
   }
 }
 
+deleteSecondaryTitle = async (stid) => {
+    const DeleteStResponse = await axios.delete(`${RULE_ENGINE_URL}/api/v1/secondary-title/delete/${stid}`).catch(error=> console.log(error))
+    if(DeleteStResponse.status === 200){
+        console.log(`Secondary Title Deleted Successfully ${stid}`);
+        return true;
+       }else{
+        console.log(`Secondary Title Delete Fail ${stid}`);
+        return false;
+      }
+}
+
+deleteCourseContent = async (ccid) => {
+    const DeleteCcResponse = await axios.delete(`${RULE_ENGINE_URL}/api/v1/course-content/delete/${ccid}`).catch(error=> console.log(error))
+    if(DeleteCcResponse.status === 200){
+        console.log(`Course Content Deleted Successfully ${ccid}`);
+        return true;
+       }else{
+        console.log(`Course Content Delete Fail ${ccid}`);
+        return false;
+      }
+}
+
+checkAndDeleteExtraSecondaryTitle = async (moodleSt, dbSt) => {
+    const extraSecondaryTitle = await dbSt.filter(({ moodleModuleId: dbStId }) => !moodleSt.some(({ id: moduleId }) => moduleId === parseInt(dbStId)));
+    extraSecondaryTitle.forEach(eSt => deleteSecondaryTitle(eSt.id));
+}
+
+checkAndDeleteExtraCourseContent = async (moodleCc, dbCc) => {
+    const extraCourseContent = await dbCc.filter(({ moodleContentId: dbCcId }) => !moodleCc.some(({ id: contentId }) => contentId === parseInt(dbCcId)));
+    extraCourseContent.forEach(eCc => deleteCourseContent(eCc.id));
+}
+
 checkAndUpdateCourseContent = async (dbCourses, moodleCourse, processingDbCourse) => {
     const moodleCourseContents = await getMoodleCourseContent(processingDbCourse.moodleCourseId);
     console.log(`moodleCourseContent length ${moodleCourseContents.length}`);
@@ -148,9 +180,9 @@ checkAndUpdateCourseContent = async (dbCourses, moodleCourse, processingDbCourse
                      updateDbCourseContent(processingContent);
                  }
                  
-                 if(await moodleCourseContents[i].modules.length>0){
                      for(let j=0; j<moodleCourseContents[i].modules.length;j++){
-                         if(processingContent.secondaryTitle.length>0){
+                        // console.log(processingContent.secondaryTitle.length);
+                        // console.log(moodleCourseContents[i].modules[j].id);
                              const ProcessingSecondaryTitle = processingContent.secondaryTitle.find(secondaryTitle=>parseInt(secondaryTitle.moodleModuleId) === moodleCourseContents[i].modules[j].id)
                              if(ProcessingSecondaryTitle!==undefined){
                                  if( moodleCourseContents[i].modules[j].name !== ProcessingSecondaryTitle.title){
@@ -163,9 +195,12 @@ checkAndUpdateCourseContent = async (dbCourses, moodleCourse, processingDbCourse
                                     await setNewCourseContentsSecondaryTitle(moodleCourseContents[i].modules[j], processingContent.id);
                                  }
                              }
-                         }
-                     }
-                 }
+                      }
+
+                      if(moodleCourseContents[i].modules.length < processingContent.secondaryTitle.length) {
+                        // console.log(`${moodleCourseContents[i].modules.length} ... ${processingContent.secondaryTitle.length}`);
+                        checkAndDeleteExtraSecondaryTitle(moodleCourseContents[i].modules, processingContent.secondaryTitle);
+                      }
 
              }else{
                  console.log(`Fail to find content!!-> ml${moodleCourseContents.length} -- pcl${processingDbCourse.courseContents.length}`);
@@ -180,7 +215,13 @@ checkAndUpdateCourseContent = async (dbCourses, moodleCourse, processingDbCourse
             }
          }
      }
+
+    if(moodleCourseContents.length < processingDbCourse.courseContents.length){
+        checkAndDeleteExtraCourseContent(moodleCourseContents, processingDbCourse.courseContents);
+    }
 }
+
+
 
 router.get("/moodle-course-sync", async (req, res) => {
     let moodleCourses = [], dbCourses = [], processingDbCourse;
